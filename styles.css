@@ -724,20 +724,20 @@ button {
 
 .family-note__ornament {
   position: absolute;
-  top: 50%;
+  left: 50%;
   width: clamp(202px, 22.5vw, 292px);
   opacity: 1;
-  transform: translateY(-50%);
+  transform: translateX(-50%);
   filter: drop-shadow(0 10px 18px rgba(122, 28, 28, 0.08));
   pointer-events: none;
 }
 
-.family-note__ornament--left {
-  left: -16.5rem;
+.family-note__ornament--top {
+  top: -9.5rem;
 }
 
-.family-note__ornament--right {
-  right: -16.5rem;
+.family-note__ornament--bottom {
+  bottom: -11rem;
 }
 
 .family-note h2 {
@@ -1699,12 +1699,12 @@ button {
     opacity: 1;
   }
 
-  .family-note__ornament--left {
-    left: -7rem;
+  .family-note__ornament--top {
+    top: -7rem;
   }
 
-  .family-note__ornament--right {
-    right: -7rem;
+  .family-note__ornament--bottom {
+    bottom: -8rem;
   }
 
   .story-card__degree {
@@ -1951,14 +1951,14 @@ button {
     display: block;
     width: 92px;
     opacity: 0.95;
-    top: 50%;
+    left: 50%;
   }
 
-  .family-note__ornament--left {
-    left: -3.6rem;
+  .family-note__ornament--top {
+    top: -4.4rem;
   }
 
-  .family-note__ornament--right {
-    right: -3.6rem;
+  .family-note__ornament--bottom {
+    bottom: -5rem;
   }
 }
