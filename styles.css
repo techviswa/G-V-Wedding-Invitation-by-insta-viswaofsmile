@@ -421,8 +421,9 @@ button {
   background:
     linear-gradient(rgba(74, 28, 28, 0.25), rgba(74, 28, 28, 0.4)),
     url("./Divya%20Desams%20in%20Kerala_%20Your%202025%20Travel%20Guide.jpg")
-      center/cover no-repeat;
-  transform: scale(1.08);
+      center top/contain no-repeat;
+  background-color: #5c2f1f;
+  transform: scale(1.01);
   will-change: transform;
 }
 
@@ -870,6 +871,7 @@ button {
   width: min(940px, 100%);
   margin: 0 auto;
   padding: 1.5rem 0 0.5rem;
+  z-index: 0;
 }
 
 .timeline::before {
@@ -878,13 +880,14 @@ button {
   top: 0;
   bottom: 0;
   left: 50%;
-  width: min(240px, 30vw);
+  width: min(300px, 36vw);
   transform: translateX(-50%);
   background:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 1180' preserveAspectRatio='none'%3E%3Cpath d='M110 0 C 185 85, 185 170, 110 255 S 35 425, 110 510 S 185 680, 110 765 S 35 935, 110 1020 S 185 1110, 110 1180' fill='none' stroke='%23d59a42' stroke-width='6' stroke-linecap='round' stroke-dasharray='10 16' opacity='0.9'/%3E%3C/svg%3E")
       center/100% 100% no-repeat;
-  opacity: 0.85;
+  opacity: 1;
   pointer-events: none;
+  z-index: 0;
 }
 
 .timeline::after {
@@ -897,18 +900,22 @@ button {
     radial-gradient(circle at 50% 58%, rgba(46, 139, 87, 0.2) 0 8px, transparent 9px),
     radial-gradient(circle at 50% 82%, rgba(255, 210, 124, 0.85) 0 10px, transparent 11px);
   pointer-events: none;
+  z-index: 0;
 }
 
 .timeline-item {
   position: relative;
   width: calc(50% - 2rem);
   margin-bottom: 2.8rem;
+  z-index: 1;
 }
 
 .timeline-visual {
   width: calc(50% - 5rem);
   margin-top: -11.75rem;
   margin-bottom: 2.8rem;
+  position: relative;
+  z-index: 1;
 }
 
 .timeline-visual--right {
