@@ -1628,49 +1628,49 @@ button {
 
   .hero__floral-left,
   .hero__floral-right {
-    width: 96px;
-    top: calc(-1 * var(--nav-height) + 0.8rem);
+    width: 192px;
+    top: calc(-1 * var(--nav-height) + 0.45rem);
     opacity: 0.92;
   }
 
   .hero__hanging {
-    width: 64px;
+    width: 128px;
   }
 
   .hero__hanging--left-1,
   .hero__hanging--right-1 {
-    top: 2.4%;
+    top: 1.2%;
   }
 
   .hero__hanging--left-2,
   .hero__hanging--right-2 {
-    top: 8.5%;
+    top: 11.5%;
   }
 
   .hero__hanging--left-1 {
-    left: 2%;
+    left: -4.5%;
   }
 
   .hero__hanging--left-2 {
-    left: 9%;
+    left: 6%;
   }
 
   .hero__hanging--left-3 {
-    left: 16.5%;
-    top: 5%;
+    left: 17.5%;
+    top: 4.2%;
   }
 
   .hero__hanging--right-1 {
-    right: 2%;
+    right: -4.5%;
   }
 
   .hero__hanging--right-2 {
-    right: 9%;
+    right: 6%;
   }
 
   .hero__hanging--right-3 {
-    right: 16.5%;
-    top: 5%;
+    right: 17.5%;
+    top: 4.2%;
   }
 
   .section-heading p {
@@ -1723,7 +1723,7 @@ button {
   }
 
   .timeline-item {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     margin-left: 3.7rem;
   }
 
@@ -1749,7 +1749,7 @@ button {
   }
 
   .timeline-visual {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .timeline-visual--right {
@@ -1827,53 +1827,53 @@ button {
 
   .hero__floral-left,
   .hero__floral-right {
-    width: 78px;
-    top: calc(-1 * var(--nav-height) + 0.55rem);
+    width: 156px;
+    top: calc(-1 * var(--nav-height) + 0.3rem);
   }
 
   .hero__hanging {
-    width: 52px;
+    width: 104px;
   }
 
   .hero__hanging--left-2,
   .hero__hanging--right-2 {
-    top: 8.8%;
+    top: 10.8%;
   }
 
   .hero__hanging--left-1,
   .hero__hanging--right-1 {
-    top: 3%;
+    top: 1.8%;
   }
 
   .hero__hanging--left-1 {
-    left: 1.2%;
+    left: -5.5%;
   }
 
   .hero__hanging--right-1 {
-    right: 1.2%;
+    right: -5.5%;
   }
 
   .hero__hanging--left-2 {
-    left: 7%;
+    left: 4%;
   }
 
   .hero__hanging--right-2 {
-    right: 7%;
+    right: 4%;
   }
 
   .hero__hanging--left-3,
   .hero__hanging--right-3 {
     display: block;
-    width: 46px;
-    top: 5.4%;
+    width: 92px;
+    top: 4.8%;
   }
 
   .hero__hanging--left-3 {
-    left: 13.5%;
+    left: 15%;
   }
 
   .hero__hanging--right-3 {
-    right: 13.5%;
+    right: 15%;
   }
 
   .countdown {
@@ -1909,10 +1909,15 @@ button {
 
   .timeline-item {
     margin-left: 3.1rem;
+    margin-bottom: 2.6rem;
   }
 
   .timeline-visual--right {
     margin-left: 3.1rem;
+  }
+
+  .timeline-visual {
+    margin-bottom: 2.6rem;
   }
 
   .story-card__body,
