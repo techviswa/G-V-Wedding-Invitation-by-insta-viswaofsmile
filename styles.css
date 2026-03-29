@@ -1628,10 +1628,10 @@ button {
 
   .hero__floral-left,
   .hero__floral-right {
-    width: 80px;
-    top: calc(-1 * var(--nav-height) - 1.9rem);
+    width: 150px;
+    top: calc(-1 * var(--nav-height) - 2.5rem);
     opacity: 0.92;
-    transform: scaleY(1.1);
+    transform: scaleY(1.35);
     transform-origin: top;
   }
 
@@ -1643,12 +1643,12 @@ button {
 
   .hero__hanging--left-1,
   .hero__hanging--right-1 {
-    top: 1%;
+    top: 0.2%;
   }
 
   .hero__hanging--left-2,
   .hero__hanging--right-2 {
-    top: 18%;
+    top: 17.2%;
   }
 
   .hero__hanging--left-1 {
@@ -1661,7 +1661,7 @@ button {
 
   .hero__hanging--left-3 {
     left: 11%;
-    top: 8%;
+    top: 7.2%;
   }
 
   .hero__hanging--right-1 {
@@ -1674,7 +1674,7 @@ button {
 
   .hero__hanging--right-3 {
     right: 11%;
-    top: 8%;
+    top: 7.2%;
   }
 
   .section-heading p {
@@ -1840,9 +1840,9 @@ button {
 
   .hero__floral-left,
   .hero__floral-right {
-    width: 65px;
-    top: calc(-1 * var(--nav-height) - 1.5rem);
-    transform: scaleY(1.05);
+    width: 122px;
+    top: calc(-1 * var(--nav-height) - 2rem);
+    transform: scaleY(1.28);
     transform-origin: top;
   }
 
@@ -1854,12 +1854,12 @@ button {
 
   .hero__hanging--left-2,
   .hero__hanging--right-2 {
-    top: 17%;
+    top: 16.2%;
   }
 
   .hero__hanging--left-1,
   .hero__hanging--right-1 {
-    top: 1.5%;
+    top: 0.7%;
   }
 
   .hero__hanging--left-1 {
@@ -1882,7 +1882,7 @@ button {
   .hero__hanging--right-3 {
     display: block;
     width: 176px;
-    top: 7%;
+    top: 6.2%;
   }
 
   .hero__hanging--left-3 {
