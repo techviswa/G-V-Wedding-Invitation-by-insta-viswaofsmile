@@ -421,7 +421,7 @@ button {
   background:
     linear-gradient(rgba(74, 28, 28, 0.25), rgba(74, 28, 28, 0.4)),
     url("./Divya%20Desams%20in%20Kerala_%20Your%202025%20Travel%20Guide.jpg")
-      center top/contain no-repeat;
+      center/cover no-repeat;
   background-color: #5c2f1f;
   transform: none;
   will-change: transform;
@@ -1628,10 +1628,10 @@ button {
 
   .hero__floral-left,
   .hero__floral-right {
-    width: 320px;
-    top: calc(-1 * var(--nav-height) - 1.2rem);
+    width: 80px;
+    top: calc(-1 * var(--nav-height) - 1.9rem);
     opacity: 0.92;
-    transform: scaleY(2.2);
+    transform: scaleY(1.1);
     transform-origin: top;
   }
 
@@ -1840,9 +1840,9 @@ button {
 
   .hero__floral-left,
   .hero__floral-right {
-    width: 260px;
-    top: calc(-1 * var(--nav-height) - 0.9rem);
-    transform: scaleY(2.1);
+    width: 65px;
+    top: calc(-1 * var(--nav-height) - 1.5rem);
+    transform: scaleY(1.05);
     transform-origin: top;
   }
 
