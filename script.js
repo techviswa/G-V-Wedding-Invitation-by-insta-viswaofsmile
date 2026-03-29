@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     preloader.classList.add("is-hidden");
     document.body.classList.remove("is-locked");
-  }, 2000);
+  }, 1000);
 });
 
 menuToggle?.addEventListener("click", () => {
