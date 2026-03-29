@@ -1948,6 +1948,17 @@ button {
   }
 
   .family-note__ornament {
-    display: none;
+    display: block;
+    width: 92px;
+    opacity: 0.95;
+    top: 50%;
+  }
+
+  .family-note__ornament--left {
+    left: -3.6rem;
+  }
+
+  .family-note__ornament--right {
+    right: -3.6rem;
   }
 }
