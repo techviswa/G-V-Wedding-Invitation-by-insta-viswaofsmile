@@ -1413,41 +1413,62 @@ button {
   }
 
   .timeline::before {
-    left: 1.5rem;
-    width: 68px;
+    left: 2.2rem;
+    width: 82px;
     transform: none;
     background:
-      linear-gradient(180deg, rgba(213, 154, 66, 0.9), rgba(178, 34, 34, 0.8), rgba(46, 139, 87, 0.75));
-    border-radius: 999px;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 1180' preserveAspectRatio='none'%3E%3Cpath d='M55 0 C 85 60, 20 130, 55 210 S 90 355, 55 440 S 20 585, 55 670 S 88 815, 55 900 S 18 1050, 55 1180' fill='none' stroke='%23d59a42' stroke-width='7' stroke-linecap='round' stroke-dasharray='10 14'/%3E%3C/svg%3E")
+      center/100% 100% no-repeat;
   }
 
   .timeline::after {
-    display: none;
+    inset: 1.2rem 0 0;
+    background:
+      radial-gradient(circle at 2.2rem 12%, rgba(255, 210, 124, 0.92) 0 8px, transparent 9px),
+      radial-gradient(circle at 2.2rem 38%, rgba(178, 34, 34, 0.2) 0 6px, transparent 7px),
+      radial-gradient(circle at 2.2rem 64%, rgba(46, 139, 87, 0.18) 0 6px, transparent 7px),
+      radial-gradient(circle at 2.2rem 88%, rgba(255, 210, 124, 0.82) 0 8px, transparent 9px);
   }
 
   .timeline-item,
   .timeline-item--right,
   .timeline-visual {
-    width: 100%;
-    margin-left: 0;
-    padding-left: 4.4rem;
+    width: min(calc(100% - 5rem), 34rem);
+    padding-left: 0;
+  }
+
+  .timeline-item {
+    margin-left: 4.3rem;
+    margin-right: auto;
+    transform: rotate(-1deg);
+  }
+
+  .timeline-item--right {
+    margin-left: auto;
+    margin-right: 0;
+    transform: rotate(1deg);
   }
 
   .timeline-visual {
-    margin-top: 0;
+    margin-top: 0.2rem;
     margin-bottom: 2rem;
-    transform: none;
+    margin-left: auto;
+    margin-right: 0;
+    transform: rotate(1.2deg);
   }
 
   .timeline-visual--right {
     margin-top: 0;
+    margin-left: 4.3rem;
+    margin-right: auto;
+    transform: rotate(-1.2deg);
   }
 
   .timeline-item:nth-of-type(1),
   .timeline-item:nth-of-type(2),
   .timeline-item:nth-of-type(3),
   .timeline-item:nth-of-type(4) {
-    transform: none;
+    transform: unset;
   }
 
   .timeline-item__card,
@@ -1464,25 +1485,20 @@ button {
 
   .timeline-item__marker,
   .timeline-item--right .timeline-item__marker {
-    left: 0;
+    left: -3.05rem;
     right: auto;
-  }
-
-  .hero__hanging--left-3,
-  .hero__hanging--right-3 {
-    display: none;
   }
 
   .hero__floral-left {
     width: clamp(120px, 23.4vw, 172px);
     left: 0.5%;
-    top: calc(-1 * var(--nav-height) - 2.6rem);
+    top: calc(-1 * var(--nav-height) + 0.2rem);
   }
 
   .hero__floral-right {
     width: clamp(120px, 23.4vw, 172px);
     right: 0.5%;
-    top: calc(-1 * var(--nav-height) - 2.6rem);
+    top: calc(-1 * var(--nav-height) + 0.2rem);
   }
 }
 
@@ -1526,9 +1542,17 @@ button {
   }
 
   .hero {
-    min-height: auto;
-    padding-top: calc(var(--nav-height) + 1.25rem);
-    padding-bottom: 7.5rem;
+    min-height: 100svh;
+    padding-top: calc(var(--nav-height) + 1.7rem);
+    padding-bottom: 6.5rem;
+  }
+
+  .hero__background {
+    background:
+      linear-gradient(rgba(74, 28, 28, 0.25), rgba(74, 28, 28, 0.4)),
+      url("./Divya%20Desams%20in%20Kerala_%20Your%202025%20Travel%20Guide.jpg")
+        center/cover no-repeat;
+    transform: none;
   }
 
   .hero__content {
@@ -1605,48 +1629,48 @@ button {
   .hero__floral-left,
   .hero__floral-right {
     width: 96px;
-    top: calc(-1 * var(--nav-height) - 1.65rem);
+    top: calc(-1 * var(--nav-height) + 0.8rem);
     opacity: 0.92;
   }
 
   .hero__hanging {
-    width: 72px;
+    width: 64px;
   }
 
   .hero__hanging--left-1,
   .hero__hanging--right-1 {
-    top: 0.4%;
+    top: 2.4%;
   }
 
   .hero__hanging--left-2,
   .hero__hanging--right-2 {
-    top: 8.8%;
+    top: 8.5%;
   }
 
   .hero__hanging--left-1 {
-    left: 3%;
+    left: 2%;
   }
 
   .hero__hanging--left-2 {
-    left: 12%;
+    left: 9%;
   }
 
   .hero__hanging--left-3 {
-    left: 20%;
-    top: 3.2%;
+    left: 16.5%;
+    top: 5%;
   }
 
   .hero__hanging--right-1 {
-    right: 3%;
+    right: 2%;
   }
 
   .hero__hanging--right-2 {
-    right: 12%;
+    right: 9%;
   }
 
   .hero__hanging--right-3 {
-    right: 20%;
-    top: 3.2%;
+    right: 16.5%;
+    top: 5%;
   }
 
   .section-heading p {
@@ -1695,11 +1719,12 @@ button {
   .timeline-item,
   .timeline-item--right,
   .timeline-visual {
-    padding-left: 3.6rem;
+    width: min(calc(100% - 4.4rem), 28rem);
   }
 
   .timeline-item {
-    margin-bottom: 1.35rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3.7rem;
   }
 
   .timeline-item__marker,
@@ -1725,6 +1750,10 @@ button {
 
   .timeline-visual {
     margin-bottom: 1.5rem;
+  }
+
+  .timeline-visual--right {
+    margin-left: 3.7rem;
   }
 
   .timeline-visual img {
@@ -1782,8 +1811,9 @@ button {
   }
 
   .hero {
-    padding-top: calc(var(--nav-height) + 1rem);
-    padding-bottom: 7rem;
+    min-height: 100svh;
+    padding-top: calc(var(--nav-height) + 1.35rem);
+    padding-bottom: 6.2rem;
   }
 
   .hero__title {
@@ -1798,18 +1828,52 @@ button {
   .hero__floral-left,
   .hero__floral-right {
     width: 78px;
-    top: calc(-1 * var(--nav-height) - 1.25rem);
+    top: calc(-1 * var(--nav-height) + 0.55rem);
   }
 
   .hero__hanging {
-    width: 62px;
+    width: 52px;
   }
 
   .hero__hanging--left-2,
-  .hero__hanging--right-2,
+  .hero__hanging--right-2 {
+    top: 8.8%;
+  }
+
+  .hero__hanging--left-1,
+  .hero__hanging--right-1 {
+    top: 3%;
+  }
+
+  .hero__hanging--left-1 {
+    left: 1.2%;
+  }
+
+  .hero__hanging--right-1 {
+    right: 1.2%;
+  }
+
+  .hero__hanging--left-2 {
+    left: 7%;
+  }
+
+  .hero__hanging--right-2 {
+    right: 7%;
+  }
+
   .hero__hanging--left-3,
   .hero__hanging--right-3 {
-    display: none;
+    display: block;
+    width: 46px;
+    top: 5.4%;
+  }
+
+  .hero__hanging--left-3 {
+    left: 13.5%;
+  }
+
+  .hero__hanging--right-3 {
+    right: 13.5%;
   }
 
   .countdown {
@@ -1823,15 +1887,17 @@ button {
   .timeline-item,
   .timeline-item--right,
   .timeline-visual {
-    padding-left: 3.25rem;
+    width: min(calc(100% - 3.9rem), 23rem);
   }
 
   .timeline::before {
-    left: 1.2rem;
+    left: 1.8rem;
+    width: 72px;
   }
 
   .timeline-item__marker,
   .timeline-item--right .timeline-item__marker {
+    left: -2.6rem;
     width: 40px;
     height: 40px;
     font-size: 1.05rem;
@@ -1839,6 +1905,14 @@ button {
 
   .timeline-item__card {
     padding: 1.15rem;
+  }
+
+  .timeline-item {
+    margin-left: 3.1rem;
+  }
+
+  .timeline-visual--right {
+    margin-left: 3.1rem;
   }
 
   .story-card__body,
