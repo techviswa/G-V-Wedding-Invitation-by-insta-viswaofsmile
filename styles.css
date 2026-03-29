@@ -423,7 +423,7 @@ button {
     url("./Divya%20Desams%20in%20Kerala_%20Your%202025%20Travel%20Guide.jpg")
       center top/contain no-repeat;
   background-color: #5c2f1f;
-  transform: scale(1.01);
+  transform: none;
   will-change: transform;
 }
 
@@ -936,27 +936,27 @@ button {
 }
 
 .timeline-item:nth-of-type(1) {
-  transform: translateX(-1.2rem) rotate(-1.2deg);
+  transform: translateX(-2rem) rotate(-2deg);
 }
 
 .timeline-item:nth-of-type(2) {
-  transform: translateX(1.35rem) rotate(1.1deg);
+  transform: translateX(2.3rem) rotate(2deg);
 }
 
 .timeline-item:nth-of-type(3) {
-  transform: translateX(-0.9rem) rotate(-0.8deg);
+  transform: translateX(-1.8rem) rotate(-1.6deg);
 }
 
 .timeline-item:nth-of-type(4) {
-  transform: translateX(1rem) rotate(1deg);
+  transform: translateX(2.1rem) rotate(1.8deg);
 }
 
 .timeline-visual--haldi {
-  transform: translateX(1rem) translateY(0.5rem) rotate(1.6deg);
+  transform: translateX(2.1rem) translateY(1rem) rotate(2.4deg);
 }
 
 .timeline-visual--sangeet {
-  transform: translateX(-1rem) translateY(-0.25rem) rotate(-1.5deg);
+  transform: translateX(-2.2rem) translateY(0.3rem) rotate(-2.4deg);
 }
 
 .timeline-visual--muhurtham img {
@@ -967,7 +967,7 @@ button {
 }
 
 .timeline-visual--muhurtham {
-  transform: translateX(1rem) translateY(0.35rem) rotate(1.2deg);
+  transform: translateX(2rem) translateY(0.75rem) rotate(2deg);
 }
 
 .timeline-visual--sangeet img {
@@ -991,7 +991,7 @@ button {
 }
 
 .timeline-visual--reception {
-  transform: translateX(-0.95rem) rotate(-1.3deg);
+  transform: translateX(-2rem) translateY(0.25rem) rotate(-2.2deg);
 }
 
 .timeline-item--highlight {
@@ -1628,49 +1628,53 @@ button {
 
   .hero__floral-left,
   .hero__floral-right {
-    width: 192px;
-    top: calc(-1 * var(--nav-height) + 0.45rem);
+    width: 320px;
+    top: calc(-1 * var(--nav-height) - 1.2rem);
     opacity: 0.92;
+    transform: scaleY(2.2);
+    transform-origin: top;
   }
 
   .hero__hanging {
-    width: 128px;
+    width: 320px;
+    transform: scaleY(2.45);
+    transform-origin: top center;
   }
 
   .hero__hanging--left-1,
   .hero__hanging--right-1 {
-    top: 1.2%;
+    top: 1%;
   }
 
   .hero__hanging--left-2,
   .hero__hanging--right-2 {
-    top: 11.5%;
+    top: 18%;
   }
 
   .hero__hanging--left-1 {
-    left: -4.5%;
+    left: -18%;
   }
 
   .hero__hanging--left-2 {
-    left: 6%;
+    left: -3%;
   }
 
   .hero__hanging--left-3 {
-    left: 17.5%;
-    top: 4.2%;
+    left: 11%;
+    top: 8%;
   }
 
   .hero__hanging--right-1 {
-    right: -4.5%;
+    right: -18%;
   }
 
   .hero__hanging--right-2 {
-    right: 6%;
+    right: -3%;
   }
 
   .hero__hanging--right-3 {
-    right: 17.5%;
-    top: 4.2%;
+    right: 11%;
+    top: 8%;
   }
 
   .section-heading p {
@@ -1725,6 +1729,13 @@ button {
   .timeline-item {
     margin-bottom: 3rem;
     margin-left: 3.7rem;
+    transform: rotate(-2.2deg);
+    border-radius: 28px;
+  }
+
+  .timeline-item--right {
+    margin-right: 0.4rem;
+    transform: rotate(2.2deg);
   }
 
   .timeline-item__marker,
@@ -1750,10 +1761,12 @@ button {
 
   .timeline-visual {
     margin-bottom: 3rem;
+    transform: rotate(2deg);
   }
 
   .timeline-visual--right {
     margin-left: 3.7rem;
+    transform: rotate(-2deg);
   }
 
   .timeline-visual img {
@@ -1827,53 +1840,57 @@ button {
 
   .hero__floral-left,
   .hero__floral-right {
-    width: 156px;
-    top: calc(-1 * var(--nav-height) + 0.3rem);
+    width: 260px;
+    top: calc(-1 * var(--nav-height) - 0.9rem);
+    transform: scaleY(2.1);
+    transform-origin: top;
   }
 
   .hero__hanging {
-    width: 104px;
+    width: 240px;
+    transform: scaleY(2.35);
+    transform-origin: top center;
   }
 
   .hero__hanging--left-2,
   .hero__hanging--right-2 {
-    top: 10.8%;
+    top: 17%;
   }
 
   .hero__hanging--left-1,
   .hero__hanging--right-1 {
-    top: 1.8%;
+    top: 1.5%;
   }
 
   .hero__hanging--left-1 {
-    left: -5.5%;
+    left: -22%;
   }
 
   .hero__hanging--right-1 {
-    right: -5.5%;
+    right: -22%;
   }
 
   .hero__hanging--left-2 {
-    left: 4%;
+    left: -6%;
   }
 
   .hero__hanging--right-2 {
-    right: 4%;
+    right: -6%;
   }
 
   .hero__hanging--left-3,
   .hero__hanging--right-3 {
     display: block;
-    width: 92px;
-    top: 4.8%;
+    width: 176px;
+    top: 7%;
   }
 
   .hero__hanging--left-3 {
-    left: 15%;
+    left: 9%;
   }
 
   .hero__hanging--right-3 {
-    right: 15%;
+    right: 9%;
   }
 
   .countdown {
@@ -1910,14 +1927,17 @@ button {
   .timeline-item {
     margin-left: 3.1rem;
     margin-bottom: 2.6rem;
+    transform: rotate(-1.8deg);
   }
 
   .timeline-visual--right {
     margin-left: 3.1rem;
+    transform: rotate(-1.8deg);
   }
 
   .timeline-visual {
     margin-bottom: 2.6rem;
+    transform: rotate(1.8deg);
   }
 
   .story-card__body,
