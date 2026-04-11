@@ -1,6 +1,7 @@
 const weddingDate = new Date("2026-05-07T10:30:00+05:30");
 
 const preloader = document.getElementById("preloader");
+const preloaderImage = document.querySelector(".preloader__diya");
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const heroBackground = document.querySelector(".hero__background");
@@ -33,7 +34,7 @@ document.body.classList.add("is-locked");
 
 let preloaderDismissed = false;
 const preloaderStartedAt = Date.now();
-const PRELOADER_MIN_DURATION = 1200;
+const PRELOADER_MIN_DURATION = 1800;
 
 function hidePreloader() {
   if (preloaderDismissed || !preloader) {
@@ -54,9 +55,16 @@ function hidePreloader() {
   }, remaining);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+if (preloaderImage) {
+  if (preloaderImage.complete) {
+    hidePreloader();
+  } else {
+    preloaderImage.addEventListener("load", hidePreloader, { once: true });
+    preloaderImage.addEventListener("error", hidePreloader, { once: true });
+  }
+} else {
   hidePreloader();
-});
+}
 
 window.addEventListener("load", hidePreloader, { once: true });
 

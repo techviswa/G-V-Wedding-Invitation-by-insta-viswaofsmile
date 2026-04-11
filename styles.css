@@ -989,7 +989,10 @@ button {
 }
 
 .timeline-visual--haldi,
-.timeline-visual--sangeet,
+.timeline-visual--sangeet {
+  width: calc(50% - 5rem);
+}
+
 .timeline-visual--reception {
   width: calc(50% - 6rem);
 }
