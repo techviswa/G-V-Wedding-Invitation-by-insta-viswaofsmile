@@ -972,29 +972,21 @@ button {
   transform: translateX(-2.2rem) translateY(0.3rem) rotate(-2.4deg);
 }
 
-.timeline-visual--haldi,
-.timeline-visual--sangeet,
-.timeline-visual--muhurtham {
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: var(--shadow-strong);
-  border: 1px solid rgba(178, 34, 34, 0.08);
-}
-
 .timeline-visual--haldi img,
 .timeline-visual--sangeet img,
 .timeline-visual--muhurtham img {
   width: 100%;
-  height: 100%;
-  border-radius: inherit;
+  height: auto;
+  aspect-ratio: auto;
   object-fit: contain;
+  object-position: center center;
   background: transparent;
 }
 
-.timeline-visual--muhurtham img {
-  object-fit: contain;
+.timeline-visual--haldi,
+.timeline-visual--sangeet,
+.timeline-visual--muhurtham {
+  width: calc(50% - 5rem);
 }
 
 .timeline-visual--muhurtham {
@@ -1003,11 +995,6 @@ button {
 
 .timeline-visual--sangeet img {
   object-position: center top;
-}
-
-.timeline-visual--haldi,
-.timeline-visual--sangeet {
-  width: calc(50% - 5rem);
 }
 
 .timeline-visual--reception {
