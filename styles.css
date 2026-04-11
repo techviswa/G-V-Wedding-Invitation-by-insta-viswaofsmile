@@ -92,7 +92,7 @@ button {
   animation: preloaderFloat 2s ease-in-out infinite;
 }
 
-.preloader__diya {
+.preloader__image {
   width: 150px;
   margin: 0 auto;
   filter: drop-shadow(0 0 28px rgba(255, 179, 0, 0.75));

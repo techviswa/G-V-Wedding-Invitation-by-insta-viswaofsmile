@@ -1,7 +1,7 @@
 const weddingDate = new Date("2026-05-07T10:30:00+05:30");
 
 const preloader = document.getElementById("preloader");
-const preloaderImage = document.querySelector(".preloader__diya");
+const preloaderImage = document.querySelector(".preloader__image");
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const heroBackground = document.querySelector(".hero__background");
