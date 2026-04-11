@@ -32,19 +32,30 @@ const RSVP_CONFIG = {
 document.body.classList.add("is-locked");
 
 let preloaderDismissed = false;
+const preloaderStartedAt = Date.now();
+const PRELOADER_MIN_DURATION = 1200;
 
 function hidePreloader() {
   if (preloaderDismissed || !preloader) {
     return;
   }
 
-  preloaderDismissed = true;
-  preloader.classList.add("is-hidden");
-  document.body.classList.remove("is-locked");
+  const elapsed = Date.now() - preloaderStartedAt;
+  const remaining = Math.max(PRELOADER_MIN_DURATION - elapsed, 0);
+
+  window.setTimeout(() => {
+    if (preloaderDismissed || !preloader) {
+      return;
+    }
+
+    preloaderDismissed = true;
+    preloader.classList.add("is-hidden");
+    document.body.classList.remove("is-locked");
+  }, remaining);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  window.setTimeout(hidePreloader, 350);
+  hidePreloader();
 });
 
 window.addEventListener("load", hidePreloader, { once: true });
