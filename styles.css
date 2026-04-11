@@ -995,6 +995,7 @@ button {
 
 .timeline-visual--sangeet img {
   object-position: center top;
+  clip-path: inset(10% 0 10% 0 round var(--radius));
 }
 
 .timeline-visual--reception {
