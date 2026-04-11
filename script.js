@@ -31,12 +31,23 @@ const RSVP_CONFIG = {
 
 document.body.classList.add("is-locked");
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    preloader.classList.add("is-hidden");
-    document.body.classList.remove("is-locked");
-  }, 1200);
+let preloaderDismissed = false;
+
+function hidePreloader() {
+  if (preloaderDismissed || !preloader) {
+    return;
+  }
+
+  preloaderDismissed = true;
+  preloader.classList.add("is-hidden");
+  document.body.classList.remove("is-locked");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  window.setTimeout(hidePreloader, 350);
 });
+
+window.addEventListener("load", hidePreloader, { once: true });
 
 menuToggle?.addEventListener("click", () => {
   const isOpen = mobileMenu.classList.toggle("is-open");

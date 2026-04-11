@@ -620,6 +620,11 @@ button {
   z-index: 1;
 }
 
+.section:not(:first-of-type) {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
+
 .hero--home {
   background-position: center;
   background-repeat: no-repeat;
