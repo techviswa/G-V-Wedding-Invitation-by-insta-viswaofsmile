@@ -34,7 +34,7 @@ document.body.classList.add("is-locked");
 
 let preloaderDismissed = false;
 const preloaderStartedAt = Date.now();
-const PRELOADER_MIN_DURATION = 1800;
+const PRELOADER_MIN_DURATION = 2500;
 
 function hidePreloader() {
   if (preloaderDismissed || !preloader) {

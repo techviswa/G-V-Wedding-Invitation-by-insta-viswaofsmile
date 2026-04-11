@@ -940,7 +940,6 @@ button {
 .timeline-visual img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.92);
   object-fit: cover;
@@ -973,8 +972,22 @@ button {
   transform: translateX(-2.2rem) translateY(0.3rem) rotate(-2.4deg);
 }
 
-.timeline-visual--muhurtham img {
+.timeline-visual--haldi,
+.timeline-visual--sangeet,
+.timeline-visual--muhurtham {
   aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.timeline-visual--haldi img,
+.timeline-visual--sangeet img,
+.timeline-visual--muhurtham img {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.timeline-visual--muhurtham img {
   object-fit: cover;
   background: rgba(255, 255, 255, 0.92);
 }
