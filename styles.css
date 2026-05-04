@@ -965,14 +965,25 @@ button {
   transform: translateX(2.1rem) rotate(1.8deg);
 }
 
+.timeline-item:nth-of-type(5) {
+  transform: translateX(-1.8rem) rotate(-1.6deg);
+}
+
 .timeline-visual--haldi {
   transform: translateX(2.1rem) translateY(1rem) rotate(2.4deg);
+}
+
+.timeline-visual--haldi-second {
+  width: calc(50% - 9rem);
+  max-width: 19rem;
+  transform: translateX(-2.2rem) translateY(0.3rem) rotate(-2.4deg);
 }
 
 .timeline-visual--sangeet {
   transform: translateX(-2.2rem) translateY(0.3rem) rotate(-2.4deg);
 }
 
+.timeline-visual--haldi-second img,
 .timeline-visual--haldi img,
 .timeline-visual--sangeet img,
 .timeline-visual--muhurtham img {
@@ -982,6 +993,10 @@ button {
   object-fit: contain;
   object-position: center center;
   background: transparent;
+}
+
+.timeline-visual--haldi-second img {
+  clip-path: inset(5% 0 5% 0 round var(--radius));
 }
 
 .timeline-visual--haldi,
@@ -1070,9 +1085,27 @@ button {
   text-transform: uppercase;
 }
 
+.timeline-item__subtime {
+  margin: -0.25rem 0 0.85rem;
+  color: #b22222;
+  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
 .venue-grid {
+  display: grid;
   grid-template-columns: 0.95fr 1.2fr;
   align-items: stretch;
+  gap: 2rem;
+}
+
+.venue-grid + .venue-grid {
+  margin-top: 3rem;
+}
+
+.venue-grid--reverse {
+  grid-template-columns: 1.2fr 0.95fr;
 }
 
 .venue-card {
@@ -1489,7 +1522,8 @@ button {
   .timeline-item:nth-of-type(1),
   .timeline-item:nth-of-type(2),
   .timeline-item:nth-of-type(3),
-  .timeline-item:nth-of-type(4) {
+  .timeline-item:nth-of-type(4),
+  .timeline-item:nth-of-type(5) {
     transform: unset;
   }
 
